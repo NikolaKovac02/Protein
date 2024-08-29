@@ -1,0 +1,76 @@
+h1{
+	color: brown;
+	position: relative;
+	left: 90px;
+	top: 10px;
+	font-size: 30px;
+letter-spacing: 2px;}
+	
+body{
+	background-image: url("../PROTA.png");
+	background-position:center;	
+	background-repeat:no-repreat;
+	background-size:cover;
+	margin:0;
+	padding:0;
+}
+
+
+
+.nav{width:100%;
+	background: white;
+	overflow: hidden;
+	}
+
+
+.nav a{margin-left:38px;
+	padding: 14px 16px;
+	text-decoration: none;
+	text-align:center;
+	color: black;
+font-size: 24px;
+display: block;
+float: left;
+}
+
+.nav a:hover{
+	background-color: silver;
+color:brown;}
+
+.contact{
+	width: 52svw;
+	height: 50vh;
+background- color: brown;
+color: brown;
+display: flex;
+justify- content: center;
+align-items: center;
+}
+
+.contact form{
+display: flex;
+flex-direction : column ;
+padding:10px 20px 20px 20px;
+background:silver;
+border: 1px solid silver;
+border-radius: 50px;
+width:30%
+}
+
+.contact input, textarea{
+background: beige;}
+
+.contact button{color:red;}
+
+#paragraf {
+	color:brown;
+	font-weight:bold;
+	font-size:24px;
+	padding:40px;
+	}
+	
+#slike{
+padding:60px;
+font-size:30px;}
+
+	

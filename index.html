@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>PROTEINI SHOP</title>
+  <link rel="stylesheet" href="style/style.css">
+</head>
+<body>
+  <h1>PROTEINI SHOP</h1>
+  
+  <div>
+    <label for="starost">Unesite starost:</label>
+    <input type="number" id="starost" name="starost">
+    <button onclick="proveriStarost()">Proveri starost</button>
+    <p id="rezultat"></p>
+<h2>Proizvodi koji su trenutno dostupni</h2>
+<button onclick="prikaziProizvode()">Prikazi proizvode</button>
+
+
+  </div>
+  
+  <div class="contact">
+    
+    <form id="contactForm" onsubmit="handleFormSubmit(event)">
+      <h2 id="kontaktNaslov" onclick="promeniStil()">Kontaktirajte Nas</h2>
+      <input type="text" placeholder="Ime i prezime" name="imePrezime" id="imePrezime">
+      <input type="email" placeholder="Email adresa" name="email">
+      <textarea placeholder="Unesite pitanje" cols="6"></textarea>
+      <button type="submit">Pošaljite poruku</button>
+    </form>
+  </div>
+  <div id="poruka" onmouseover="promeniBojuPoruke()">Ovde će se prikazati poruka</div>
+
+  <form id="suplementForma">
+    <h2>Izračunaj ukupnu cenu suplemenata</h2>
+    <p>Zbog inflacije i varijajucih cena molimo vas da sami izracunate cene nasih proizvoda pomocu kalkulatora dole</p>
+    <label for="cenaPoKomadu">Cena po komadu:</label>
+    <input type="number" id="cenaPoKomadu" step="0.01" required>
+    <label for="kolicina">Količina:</label>
+    <input type="number" id="kolicina" required>
+    <label for="nazivProteina">Naziv proteina:</label>
+    <input type="text" id="nazivProteina" required>
+    
+    <button type="button" onclick="prikaziRezultate()">Izračunaj</button>
+  </form>
+  
+  <div id="rezultati"></div>
+  
+
+  <script src="script.js"></script>
+</body>
+</html>
